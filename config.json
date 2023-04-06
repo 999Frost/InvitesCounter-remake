@@ -1,0 +1,5 @@
+{
+    "mongoUrl": "votre url mongo ici",
+    "clientToken": "votre token ici",
+    "clientPrefix": "votre prefix ici"
+}
