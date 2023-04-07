@@ -32,10 +32,10 @@ export default new Command({
       bonus: 0
     }
     await client.db.set(`invites_${message.guild.id}_${member.user.id}`, {
-      total: data.total - number,
+      total: data.total + number,
       valid: data.valid,
       left: data.left,
-      bonus: data.bonus - number
+      bonus: data.bonus + number
     })
     return message.reply(`:white_check_mark: ${lang.invitesadd.success.replace('{number}', number).replace('{member}', member.user.username)}`)
   }
